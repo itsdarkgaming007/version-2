@@ -14,72 +14,84 @@
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:titleTextColor="@color/white" />
 
+    <!-- Full-Width Primary Add/Import Button -->
+    <Button
+        android:id="@+id/btnAddContacts"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/qs_accent"
+        android:text="+ Add / Import Contacts"
+        android:textColor="@color/qs_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <!-- Secondary Actions Row: Export, Rename, Delete -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
-
-        <Button
-            android:id="@+id/btnAddContacts"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:text="@string/import_paste"
-            android:textColor="@color/white"
-            app:strokeColor="@color/qs_accent" />
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnExportGroup"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
             android:text="@string/export"
-            android:textColor="@color/qs_accent"
-            app:strokeColor="@color/qs_accent" />
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            app:strokeColor="#2A3942" />
 
         <Button
             android:id="@+id/btnRenameGroup"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
             android:text="@string/rename"
-            android:textColor="@color/text_muted"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
             app:strokeColor="#2A3942" />
 
         <Button
             android:id="@+id/btnDeleteGroup"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
             android:layout_marginStart="4dp"
+            android:layout_weight="1"
             android:text="@string/delete"
             android:textColor="#EF4444"
+            android:textSize="12sp"
             app:strokeColor="#7F1D1D" />
     </LinearLayout>
 
     <EditText
         android:id="@+id/etSearchMembers"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="42dp"
         android:layout_marginHorizontal="12dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
         android:background="@color/qs_card"
-        android:hint="🔍 Search members by name or phone..."
+        android:hint="🔍 Search members..."
         android:paddingHorizontal="14dp"
         android:textColor="@color/white"
         android:textColorHint="@color/text_muted"
-        android:textSize="12sp" />
+        android:textSize="13sp" />
 
     <TextView
         android:id="@+id/tvCountInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="16dp"
-        android:paddingVertical="4dp"
+        android:paddingVertical="8dp"
         android:textColor="@color/text_muted"
         android:textSize="13sp" />
 
@@ -88,7 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="8dp" />
+        android:paddingHorizontal="12dp" />
 
     <Button
         android:id="@+id/btnCreateBulk"
