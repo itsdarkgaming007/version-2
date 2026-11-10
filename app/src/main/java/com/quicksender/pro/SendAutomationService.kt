@@ -1,3 +1,23 @@
+e: .../SendAutomationService.kt:76:34 Illegal escape: '\{'
+e: .../SendAutomationService.kt:76:39 Illegal escape: '\{'
+> Task :app:compileReleaseKotlin FAILED
+e: .../SendAutomationService.kt:76:48 Illegal escape: '\|'
+e: .../SendAutomationService.kt:76:52 Illegal escape: '\{'
+e: .../SendAutomationService.kt:76:61 Illegal escape: '\}'
+```[cite: 14]
+
+In Kotlin standard strings (`"..."`), `\{`, `\|`, and `\}` are treated as illegal escape sequences[cite: 14]. For regex patterns containing curly braces, Kotlin requires either 4 backslashes (`"\\\\{...\\\\"`) or a raw multiline string (`"""..."""`).
+
+Follow these steps directly on GitHub to fix it:
+
+### Step 1: Fix `SendAutomationService.kt`
+1. Go to your repository **`version-2`** on GitHub.
+2. Navigate to:
+   **`app`** $\rightarrow$ **`src`** $\rightarrow$ **`main`** $\rightarrow$ **`java`** $\rightarrow$ **`com`** $\rightarrow$ **`quicksender`** $\rightarrow$ **`pro`** $\rightarrow$ click **`SendAutomationService.kt`**.
+3. Click the **Pencil icon** (Edit this file).
+4. Replace the entire contents of the file with this code:
+
+```kotlin
 package com.quicksender.pro
 
 import android.accessibilityservice.AccessibilityService
@@ -73,7 +93,7 @@ class SendAutomationService : AccessibilityService() {
 }
 
 object Spintax {
-    private val pattern = Regex("\{([^\{}|]*(?:\|[^\{}|]*)+)\}")
+    private val pattern = Regex("""\{([^\{\}|]*(?:\|[^\{\}|]*)+)\}""")
 
     fun resolve(input: String, random: Random = Random.Default): String {
         var s = input
