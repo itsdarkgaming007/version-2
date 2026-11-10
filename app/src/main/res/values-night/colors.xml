@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="qs_primary">#0B141A</color>
+    <color name="qs_accent">#00A884</color>
+    <color name="qs_surface">#111B21</color>
+    <color name="qs_card">#202C33</color>
+    <color name="text_primary">#E9EDEF</color>
+    <color name="text_muted">#8696A0</color>
+    <color name="danger">#EF4444</color>
+</resources>

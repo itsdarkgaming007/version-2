@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickSender Pro</string>
+    <string name="service_label">QuickSender ஆட்டோ சென்ட் சர்வீஸ்</string>
+    <string name="empty_groups">இன்னும் எந்த குரூப்பும் உருவாக்கப்படவில்லை.\nகுரூப் உருவாக்க கீழே உள்ள + தட்டவும்.</string>
+    <string name="btn_create_group">புதிய குரூப்</string>
+    <string name="settings">அமைப்புகள் (Settings)</string>
+    <string name="templates">சேமிக்கப்பட்ட வார்ப்புருக்கள் (Templates)</string>
+    <string name="reports">அனுப்பிய அறிக்கைகள் (Reports)</string>
+    <string name="dark_mode">தீம் (Theme)</string>
+    <string name="language">மொழி (Language)</string>
+    <string name="time_delay">டைம் செட்டிங் (Delay)</string>
+    <string name="accessibility_perm">Accessibility அனுமதி</string>
+    <string name="share_app">ஆப் பகிரவும்</string>
+    <string name="about">ஆப் பற்றி</string>
+    <string name="import_paste">+ இறக்கு / பேஸ்ட்</string>
+    <string name="rename">பெயர் மாற்று</string>
+    <string name="delete">அழி</string>
+    <string name="export">தொடர்புகளை ஏற்றுமதி செய்</string>
+    <string name="create_bulk">பல்க் மெசேஜ் உருவாக்கு</string>
+    <string name="select_app">WhatsApp தேர்ந்தெடுக்கவும்</string>
+    <string name="attach_media">மீடியா சேர்க்க</string>
+    <string name="msg_hint">செய்தியை டைப் செய்யவும்...\n{வணக்கம்|ஹலோ} {name} பயன்படுத்தலாம்</string>
+    <string name="send_all">செய்தி அனுப்ப தொடங்கு</string>
+    <string name="pause">நிறுத்து</string>
+    <string name="completed">முழுமையாக அனுப்பப்பட்டது!</string>
+</resources>

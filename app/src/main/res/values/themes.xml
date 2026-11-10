@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QuickSender" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/qs_accent</item>
+        <item name="colorPrimaryVariant">@color/qs_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/qs_accent</item>
+        <item name="android:statusBarColor">@color/qs_primary</item>
+        <item name="android:windowBackground">@color/qs_primary</item>
+    </style>
+</resources>

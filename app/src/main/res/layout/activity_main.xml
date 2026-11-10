@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qs_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/qs_surface"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnMenuLeft"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Settings"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_menu" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/etSearchGroups"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qs_card"
+            android:hint="🔍 Search groups..."
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_muted"
+            android:textSize="13sp" />
+
+        <!-- Empty State Container -->
+        <LinearLayout
+            android:id="@+id/emptyStateView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:visibility="visible">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/qs_accent"
+                android:contentDescription="Add Group"
+                android:src="@drawable/ic_add"
+                app:fabCustomSize="72dp"
+                app:maxImageSize="36dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/empty_groups"
+                android:textColor="@color/text_muted"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Group List View -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGroups"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/qs_accent"
+        android:contentDescription="Add Group"
+        android:src="@drawable/ic_add"
+        android:visibility="gone"
+        app:tint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

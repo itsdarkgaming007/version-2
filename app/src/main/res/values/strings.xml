@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickSender Pro</string>
+    <string name="service_label">QuickSender Auto Send Service</string>
+    <string name="empty_groups">No groups created yet.\nTap + below to create a group.</string>
+    <string name="btn_create_group">Create Group</string>
+    <string name="settings">Settings</string>
+    <string name="templates">Saved Templates</string>
+    <string name="reports">Campaign Reports</string>
+    <string name="dark_mode">Theme Mode</string>
+    <string name="language">Language</string>
+    <string name="time_delay">Time Delay Setting</string>
+    <string name="accessibility_perm">Accessibility Service</string>
+    <string name="share_app">Share App</string>
+    <string name="about">About QuickSender</string>
+    <string name="import_paste">+ Import / Paste</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="export">Export Contacts</string>
+    <string name="create_bulk">Create Bulk Message</string>
+    <string name="select_app">Select WhatsApp App</string>
+    <string name="attach_media">Attach Media</string>
+    <string name="msg_hint">Type message or caption...\nSupports {Hello|Hi} {name}</string>
+    <string name="send_all">Start Bulk Dispatch</string>
+    <string name="pause">Pause Dispatch</string>
+    <string name="completed">Completed!</string>
+</resources>

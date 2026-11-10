@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qs_primary"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/qs_surface"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnAddContacts"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/import_paste"
+            android:textColor="@color/white"
+            app:strokeColor="@color/qs_accent" />
+
+        <Button
+            android:id="@+id/btnExportGroup"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/export"
+            android:textColor="@color/qs_accent"
+            app:strokeColor="@color/qs_accent" />
+
+        <Button
+            android:id="@+id/btnRenameGroup"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/rename"
+            android:textColor="@color/text_muted"
+            app:strokeColor="#2A3942" />
+
+        <Button
+            android:id="@+id/btnDeleteGroup"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/delete"
+            android:textColor="#EF4444"
+            app:strokeColor="#7F1D1D" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearchMembers"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/qs_card"
+        android:hint="🔍 Search members by name or phone..."
+        android:paddingHorizontal="14dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_muted"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvCountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMembers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnCreateBulk"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/qs_accent"
+        android:text="@string/create_bulk"
+        android:textColor="@color/qs_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
